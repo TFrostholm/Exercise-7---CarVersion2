@@ -40,6 +40,12 @@ namespace Sandbox
                 yourCar.GetBrand(), yourCar.GetModelName(), yourCar.GetEngineEffectInkW());
             Console.WriteLine("");
 
+            Car fredsCar = new Car("VW", "Golf", 180);
+            Console.WriteLine("Freds car is a {0} {1} with an engine effect of {2}", fredsCar.GetBrand(), fredsCar.GetModelName(), fredsCar.GetEngineEffectInkW());
+            fredsCar.SetHorsePower(1001);
+
+            Console.WriteLine("But after a little upgrade his {0} now has {1} BHP!!! meaning it has an engine effect of {2}", fredsCar.GetModelName(), fredsCar.GetHorsePower(), fredsCar.GetEngineEffectInkW());
+ 
 
             // The LAST line of code should be ABOVE this line 
         }
